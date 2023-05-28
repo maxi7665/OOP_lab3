@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Polygon
+class MyPolygon
 {
 private:
 
@@ -20,13 +20,13 @@ private:
 
 public:
 
-	Polygon(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4);
+	MyPolygon(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4);
 
-	Polygon operator *(const Polygon& right_polygon);
+	MyPolygon& operator *(const MyPolygon& right_polygon);
 
-	friend bool operator ==(const Polygon & left_polygon, const Polygon & right_polygon);
+	friend bool operator ==(const MyPolygon & left_polygon, const MyPolygon & right_polygon);
 
-	bool hasEqualSide(const Polygon& right_polygon);
+	bool hasEqualSide(const MyPolygon& right_polygon);
 
 	int getX1();
 	void setX1(int x1);
@@ -52,5 +52,7 @@ public:
 	int getY4();
 	void setY4(int y4);
 
-	~Polygon();	
+	string getDescription();
+
+	~MyPolygon();	
 };
