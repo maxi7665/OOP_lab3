@@ -28,31 +28,33 @@ public:
 
 	bool hasEqualSide(const MyPolygon& right_polygon);
 
-	int getX1();
+	int getX1() const;
 	void setX1(int x1);
 
-	int getY1();
+	int getY1() const;
 	void setY1(int y1);
 
-	int getX2();
+	int getX2() const;
 	void setX2(int x2);
 
-	int getY2();
+	int getY2() const;
 	void setY2(int y2);
 
-	int getX3();
+	int getX3() const;
 	void setX3(int x3);
 
-	int getY3();
+	int getY3() const;
 	void setY3(int y3);
 
-	int getX4();
+	int getX4() const;
 	void setX4(int x4);
 
-	int getY4();
+	int getY4() const;
 	void setY4(int y4);
 
-	string getDescription();
+	string getDescription() const;
+
+	int getPerimeter() const;
 
 	~MyPolygon();	
 };
